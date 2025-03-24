@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.protfolio-container{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;                 /*left right container ne side ma lava mate*/
+}
+.navlist{
+    display: flex;
+    gap: 3.5rem;               /*list vacche gap lava mate*/
+    height: 15vh;              /*list box ni height motu tai jay tena mate  */
+    width: 100%;
+     justify-content: center;   /* justify contact thi horizontaiy set taijase */
+    align-items: center;       /* verticaly set karva mate align item*/
+    position: fixed;         /*left right conatiner aakha page ma (felai)taijase  portfolio container ma display felx aapvathi li list conatiner ma nati aaavti bar retitit aetle postition fixed use karvathi list conatiner ni anar aaijase*/
+}
+.navlist li{
+    list-style: none;         /* list ni aagd je point dot numvber aave aene hatava*/
+}
+.navlist li a{
+    text-decoration: none;       /* list niche underline hatava mate*/
+    text-transform: uppercase;   /* letter capital ma lava mate*/
+    font-size: 1rem;
+    color: #fff;              /*list no cover white karva mate*/
+ }
+.left-container,.right-container{    /*banne ma ek sathe(similar) proprty aapva*/
+     height: 100vh;                  /*banne container ni height*/
+     display: flex;                  /*icon and text row ma aai jay alag alag*/
+     align-items: center;       /*center ma lava mate*/
+    }
+.left-container{
+     background: #262525;
+     width: 70%;
+     padding-left: 3rem;
+
+}
+.right-container{
+     background: #3877ff;
+     width: 30%;
+}
+/* .icon{
+    color: #bbb;
+}
+ */
+.content{
+    margin-left: 4rem;
+}
+.content .intro{
+    font-size: 1.5rem;
+    color: #fff;  /*white*/
+}
+.content .intro span{
+
+    color: #5db9ee;    /*jain khushi color chnage karva mate*/ 
+}
+.content h1{
+    font-size: 4rem;
+    color: #5db9ee;
+}
+.content .detail{
+    font-size: 1.1rem;    /*text ni size chnage karva*/
+    color: #fff;
+    max-width: 38rem;    /*text single line ma jatu tu aetle text ne max width aapi dhidhi aetle te  niche aai gayu ae line thi aagd nai jay niche jase*/
+    margin: 1.1rem 0 3rem 0;  /*text ni uper niche space mate margin 1.1rem top thi che, right end sight 0 , bottom thi 3rem ,left end sight 0*/
+   line-height: 1.8rem;    /*text ni uper niche  ni line ma space mate*/
+}
